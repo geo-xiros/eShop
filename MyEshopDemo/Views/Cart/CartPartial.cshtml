@@ -1,0 +1,10 @@
+﻿@model MyEshopDemo.Viewmodels.CartViewModel
+
+<div class="ajaxcart" style="color:white;">
+    Your cart: 
+    @Html.DisplayFor(model=>model.Quantity)
+    item(s) - 
+    &euro; @Html.DisplayFor(model=>model.GrandTotal)
+    <br/> 
+    @Html.ActionLink("Checkout","Index")
+</div>
